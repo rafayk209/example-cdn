@@ -14,13 +14,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'], // Inject CSS into the JS bundle
+        use: ['style-loader', 'css-loader'], // Inline CSS into the JS bundle
       },
     ],
   },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'bundle.css', // Output CSS file name
-    }),
-  ],
 };

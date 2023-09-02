@@ -13,10 +13,10 @@ function UserList() {
 
   return (
     <div>
-      <h1 style={{color:'red'}}>User List</h1>
+      <h1 className='colorfull' style={{color:'red'}}>User List</h1>
       <ul>
         {users.map(user => (
-          <li key={user.id}>{user.name}</li>
+          <li style={{color:'yellow'}} key={user.id}>{user.name}</li>
         ))}
       </ul>
     </div>
